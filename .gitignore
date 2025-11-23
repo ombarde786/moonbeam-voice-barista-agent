@@ -1,12 +1,21 @@
-.env
-.env.*
-!.env.example
+# Virtual env
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDE / OS
+.vscode/
 .DS_Store
-__pycache__
-.idea
-KMS
-.venv
-.vscode
-*.egg-info
-.pytest_cache
-.ruff_cache
+Thumbs.db
+
+# Secrets
+.env.local
+.env
+*.secret
+
+# Optional - don't publish test orders
+orders/
